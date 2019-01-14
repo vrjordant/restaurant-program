@@ -3,17 +3,18 @@
     Last edited 1/12/2019 '''
 import random, sys
 
+# Benny's was excluded for a reason lol
 allRestaurants = ['Mamoun\'s', 'Vito\'s', 'Karma', 'Makai', 'Ali Baba', 'Napoli\'s', 
 'Flatbread', 'Midtown', 'Pita Pit', 'O\'bagel', 'Bagels on the Hudson', 'Rice Shop',
 'Johnny Rockets', 'Ubu', 'Mr. Wraps', 'Qdoba', 'Chipotle', 'Pizza Republic', 
 'McDonald\'s', 'Cluck U', 'Gio\'s', 'Panera', 'Gogi Grill', 'Honeygrow', 'South Street',
-'Bareburger', 'Vivi\'s', 'Chicken Factory', 'Charrito\'s']
+'Bareburger', 'Vivi\'s', 'Chicken Factory', 'Charrito\'s', 'Koro Koro']
 
 basicTier = ['Mamoun\'s', 'McDonald\'s', 'Pita Pit', 'O\'bagel', 'Bagels on the Hudson',
 'Qdoba', 'Chipotle', 'Midtown', 'Mr. Wraps', 'Pizza Republic', 'Gio\'s']
 
 midTier = ['Makai', 'Napoli\'s', 'Flatbread', 'Gogi Grill', 'Vivi\'s', 'Chicken Factory',
-'Cluck U', 'Panera', 'Honeygrow', 'South Street']
+'Cluck U', 'Panera', 'Honeygrow', 'South Street', 'Koro Koro']
 
 sTier = ['Karma', 'Rice Shop', 'Bareburger', 'Johnny Rockets', 'Ubu', 'Ali Baba',
 'Charrito\'s']
