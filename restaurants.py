@@ -21,15 +21,15 @@ mills = False
 day = int(datetime.date.today().strftime("%w"))
 time = datetime.datetime.now().hour
 if day >=2 and day <=4 and time >= 14 and time <= 18:
-	#print('Vito\'s is having a special right now!')
-	basicTier.append('Vito\'s')
-	vitos = True
+    #print('Vito\'s is having a special right now!')
+    basicTier.append('Vito\'s')
+    vitos = True
 else:
-	#print('Vito\'s is not having a special right now.')
-	midTier.append('Vito\'s')
+    #print('Vito\'s is not having a special right now.')
+    midTier.append('Vito\'s')
 
 if day == 3 or day == 4:
-	mills = True
+    mills = True
 
 print('What kind of place would you like to eat at?')
 print('Options:')
@@ -44,18 +44,18 @@ print('\tsp: displays the current specials')
 while True:
     choice = input('Choice: ')
     if choice == 'a':
-    	print("Basic:")
-    	for x in basicTier:
-        	print("\t" + x)
-    	print("Mid:")
-    	for x in midTier:
-        	print("\t" + x)
-    	print("S:")
-    	for x in sTier:
-        	print("\t" + x)
-    	print("Special:")
-    	for x in special:
-        	print("\t" + x)
+        print("Basic:")
+        for x in basicTier:
+            print("\t" + x)
+        print("Mid:")
+        for x in midTier:
+            print("\t" + x)
+        print("S:")
+        for x in sTier:
+                print("\t" + x)
+        print("Special:")
+        for x in special:
+            print("\t" + x)
     elif choice == 'b':
         print(basicTier[random.randint(0,len(basicTier) - 1)])
     elif choice == 'm':
@@ -66,20 +66,21 @@ while True:
         sys.exit()
     elif choice == 'o':
         print('Options:')
-        print('\tall: displays a list of all restaurants')
-        print('\tbasic: chooses a random restaurant from the basic tier')
-        print('\tmid: chooses a random restaurant from the mid tier')
+        print('\ta: displays a list of all restaurants')
+        print('\tb: chooses a random restaurant from the basic tier')
+        print('\tm: chooses a random restaurant from the mid tier')
         print('\ts: chooses a random restaurant from the s tier')
-        print('\texit: closes the program')
-        print('\toptions: displays list of options again')
+        print('\te: closes the program')
+        print('\to: displays list of options again')
+        print('\tsp: displays the current specials')
     elif choice == "sp":
-    	if vitos:
-    		print('Vito\'s is having a special right now!')
-    	if day == 3:
-    		print("Mill\'s has $9.99 all you can eat wings!")
-    	elif day == 4:
-    		print("Mill\'s has $2 tacos!")
-    	if not mills and not vitos:
-    		print("No specials at this time.")
+        if vitos:
+            print('Vito\'s is having a special right now!')
+        if day == 3:
+            print("Mill\'s has $9.99 all you can eat wings!")
+        elif day == 4:
+            print("Mill\'s has $2 tacos!")
+        if not mills and not vitos:
+            print("No specials at this time.")
     else:
         print("Not an option")
