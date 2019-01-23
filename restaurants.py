@@ -1,6 +1,6 @@
 ''' A restaurant program that chooses a random restaurant in Hoboken 
     Created by Jordan Tantuico 1/12/2019
-    Last edited 1/12/2019 '''
+    Last edited 1/23/2019 '''
 import random, sys, datetime
 
 # Benny's was excluded for a reason lol
@@ -21,11 +21,9 @@ mills = False
 day = int(datetime.date.today().strftime("%w"))
 time = datetime.datetime.now().hour
 if day >=2 and day <=4 and time >= 14 and time <= 18:
-    #print('Vito\'s is having a special right now!')
     basicTier.append('Vito\'s')
     vitos = True
 else:
-    #print('Vito\'s is not having a special right now.')
     midTier.append('Vito\'s')
 
 if day == 3 or day == 4:
